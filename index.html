@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <title>
+      Forms and Widgets: Understanding Accessible Forms and Widgets
+    </title>
+
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/favicon.png"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+
+    <!-- SkipTo CSS and JS -->
+
+    <script>
+      var SkipToConfig =  {
+        'settings': {
+          'skipTo': {
+            landmarks: 'main, [role="main"], [role="search"], nav',
+            headings: 'main h1, main h2, main h3',
+            accesskey: 'S',
+            colorTheme: 'illinois',
+            displayOption: 'popup'
+          }
+        }
+      };
+      </script>
+
+    <link rel="stylesheet" href="./src/src/css/SkipTo.css">
+    <script src="./src/src/js/skipto.js"></script>
+  </head>
+
+  <body id="body">
+    
+    <!-- SkipTo Configuration -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Configure SkipTo settings
+        window.skipToConfig = {
+          settings: {
+            skipTo: {
+              landmarks: true,  // Include landmarks like header, main, and footer
+              headings: true,   // Include headings (e.g., h1, h2) in the SkipTo menu
+              accesskey: '0',   // Press '0' to activate the SkipTo menu
+              displayOption: 'popup'  // Show SkipTo as a popup overlay
+            }
+          }
+        };
+      });
+    </script>
+    
+    <!-- Page Header -->
+    <header class="page-header" role="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content">
+              <h1 class="page-name">Table of Contents</h1>
+              <ul>
+                <li>
+                  <strong>NOTE:</strong> The look and feel of the following code
+                  samples are intentionally simplistic to focus on the accessibility of the code.
+                </li>
+                <li> The code for these exercises are available at <a href="https://github.com/mdharshbarger/forms-and-widgets.git">https://github.com/mdharshbarger/forms-and-widgets.git</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container exercises mt-5" id="main" role="main">
+      <div class="card mb-3">
+        <div class="card-header"><h2>Exercise: Identify Accessibility Barriers in a Form</h2></div>
+        <div class="card-body">
+          <div class="card-text">
+            <p class="card-text">Examine the form and identify any accessibility errors. Identify missing labels, note any issues for screen readers, and check if the form is navigable by keyboard</p>
+            <p class="card-text">Exercise files: exercise\</p>
+          </div>
+          <a
+            href="Exercise/form.html"
+            class="btn btn-main btn-medium btn-round-full"
+            >Start Form Exercise</a>
+          <a
+            href="./solutions/images/Images-solution.html"
+            class="btn btn-outline-dark btn-round-full"
+            >Images Exercise Solution</a>
+        </div>
+      </div>
+      
+      
+        </div>
+      </div>
+    </main>
+
+    <!-- Page Footer -->
+    <footer class="contact" role="contentinfo">
+      <a href="#main" class="skipLink">Skip back to top</a>
+      <a href="https://mdharshbarger.github.io/forms-and-widgets/">GitHub Project</a>
+      <a href="resources.html">Developer Resources</a>
+      <a href="https://www.deque.com/resources/">Deque Resources</a>
+      <a href="https://dequeuniversity.com/resources/">Deque University Resources</a>
+      <p>&copy; 2024 Deque</p>
+    </footer>
+
+  
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
