@@ -1,41 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+  
+    <!-- Font Awesome -->
+    <link href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+          rel="stylesheet">
+  
+    <!-- Bootstrap Bundle with Popper -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    </script>
+
   <link rel="icon" href=
   "Images/Deque_Logo_PrimaryNavy.svg"
           type="image/x-icon" />
   <title>Form Exercise - Contact Us Form</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title text-center mb-4">Contact Us</h5>
-            <form>
-              <!-- No <label> elements for inputs -->
-              <input type="text" class="form-control mb-3" placeholder="Name">
-              <input type="email" class="form-control mb-3" placeholder="Email">
-              <button type="submit" class="btn btn-primary w-100">Submit</button>
 
-              <!-- No feedback for errors -->
-              <div class="text-danger mt-2 d-none">
-                Error: Please fill out this field.
-              </div>
-
-              <!-- Accessible via Tab key -->
-              <a href="#" class="btn btn-link mt-2">Need Help?</a>
-            </form>
-          </div>
+<header class="page-header" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content">
+          <h1 class="page-name">Form Exercise</h1>
+            <P>
+              <strong>NOTE:</strong> Evaluate the form below for accessibility </P>
+            <ul>
+              <li>Identify missing labels</li>
+              <li>Examine color contrast</li>
+              <li>Note any screen issues</li>
+              <li>Check if the form is navigable by keyboard</li>
+            </ul>
         </div>
       </div>
     </div>
   </div>
+</header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<body id="body">
+
+  <main class="container exercises mt-5" id="main" role="main">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-4">Contact Us</h5>
+              <form>
+              
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" placeholder="Name *">
+                  <label>Name *</label>
+                </div>
+                
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email *">
+                  <div class="form-text">We will never share your email with anyone else.</div>
+                </div>
+              
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    I agree to your <a href="https://www.deque.com/privacy-policy/?_gl=1*qgw75v*_gcl_aw*R0NMLjE3MzcwMzUwNDkuQ2owS0NRaUEtYUs4QmhDREFSSXNBTF8tSDlrbl9XemFhQXQtVExnQlNqNnB1OWk1XzAwNFN2eVJnUHpOeHhqNHNLVmVjSWxIZFd4VVlyZ2FBZ2MzRUFMd193Y0I.*_gcl_au*MTE4NzkzMTIzMS4xNzM1OTExMzY4">Privacy Policy</a>.
+                  </label>
+                </div>
+              
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+                <div class="text-danger mt-2 d-none">
+                  Error: Please fill out this field.
+                </div>
+
+                <!-- Accessible via Tab key -->
+                <a href="#" class="btn btn-link mt-2">Need Help?</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Page Footer -->
+  <div class="container my-5">
+
+    <footer class="bg-dark text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+            <a href="https://mdharshbarger.github.io/forms-and-widgets/" class="text-white">GitHub Project</a>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+            <a href="resources.html" class="text-white">Developer Resources</a>
+                      </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+            <a href="https://www.deque.com/resources/" class="text-white">Deque Resources</a>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+            <a href="https://dequeuniversity.com/resources/" class="text-white">Deque University Resources</a>
+          <!--Grid column-->
+          </div>
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2025 Copyright:
+        <a class="text-white" href="https://deque.com/">Deque Systems Inc.</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
