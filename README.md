@@ -18,7 +18,7 @@ To get started with the exercises, follow these steps:
 
 You can also view the `index.html` file by:
 - Clicking directly on `index.html` to open it in your default browser.
-- Visiting the [a11y exercises on GitHub Pages](https://mdharshbarger.github.io/forms-and-widgets/) to access the exercises.
+- Visiting the [a11y exercises on GitHub Pages](https://mdharshbarger.github.io/Form-and-Widgets/) to access the exercises.
 
 ## Exercises
 
