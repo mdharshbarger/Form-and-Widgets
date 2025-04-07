@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Form (Workshop Starter)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 2rem;
+    }
+    .form-container {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-section {
+      margin-bottom: 2rem;
+    }
+    .form-section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    label, input, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    .radio-group label, .checkbox-group label {
+      display: inline-block;
+      width: auto;
+      margin-right: 1rem;
+    }
+    .error-message {
+      color: red;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .invalid {
+      border: 2px solid red;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background-color: #c8102e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a50e25;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form id="donationForm" novalidate>
+      <div class="form-section">
+        <h2>Donation Amount</h2>
+        <div class="radio-group">
+          <!-- Missing labels on purpose -->
+          <input type="radio" name="amount" value="25">
+          <input type="radio" name="amount" value="50">
+          <input type="radio" name="amount" value="100">
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Donor Information</h2>
+        <label>First Name</label>
+        <input type="text" name="firstName">
+
+        <label>Last Name</label>
+        <input type="text" name="lastName">
+
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone Number">
+      </div>
+
+      <div class="form-section">
+        <h2>Billing Address</h2>
+        <!-- Missing fieldset and labels for accessibility work -->
+        <input type="text" placeholder="Address Line 1">
+        <input type="text" placeholder="City">
+        <select>
+          <option value="">Select State</option>
+          <option value="IL">Illinois</option>
+          <option value="CA">California</option>
+          <option value="TX">Texas</option>
+        </select>
+        <input type="text" placeholder="ZIP Code">
+      </div>
+
+      <div class="form-section">
+        <h2>Donation Frequency</h2>
+        <div class="radio-group">
+          <label><input type="radio" name="frequency" value="one-time"> One-time</label>
+          <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <button type="submit">Donate Now</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Placeholder JavaScript for inline error handling in later phases
+    document.getElementById('donationForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const inputs = form.querySelectorAll('input');
+
+      // Clear previous errors
+      inputs.forEach(input => input.classList.remove('invalid'));
+
+      let firstInvalid = null;
+
+      inputs.forEach(input => {
+        if (input.hasAttribute('required') && !input.value.trim()) {
+          input.classList.add('invalid');
+          if (!firstInvalid) firstInvalid = input;
+        }
+      });
+
+      if (firstInvalid) {
+        firstInvalid.focus();
+      } else {
+        alert('Form submitted! (mock)');
+      }
+    });
+  </script>
+</body>
+</html>
