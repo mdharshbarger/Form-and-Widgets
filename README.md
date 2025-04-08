@@ -12,19 +12,22 @@ To get started with the exercises, follow these steps:
 2. Navigate to the project directory: `cd a11y-exercises`
 3. Open your project in Visual Studio Code.
 4. Install the "Live Server" extension from the Visual Studio Code marketplace.
-5. Right-click on the `index.html` file and select "Open with Live Server." This will start a local web server and open the `index.html` file in your default browser.
-
-### Alternative Methods
-
-You can also view the `index.html` file by:
-- Clicking directly on `index.html` to open it in your default browser.
-- Visiting the [a11y exercises on GitHub Pages](https://mdharshbarger.github.io/Form-and-Widgets/) to access the exercises.
 
 ## Exercises
 
 ### Identify Accessibility Barriers in a Form
 
-**Objective**: Examine the form and identify any accessibility errors. Identify missing labels, note any issues for screen readers, and check if the form is navigable by keyboard
+**Part 1: Fix the Form**:
 
-**Deliverable**:
-- List the errors you found on the form.
+**Objective**: In this part of the activity, you’ll apply three key accessibility practices to improve the usability of the form for screen reader and keyboard users.
+
+- Adding labels and associating them with inputs
+- Grouping related fields
+- Creating accessible error messages
+
+**Part 2: Fix the Toggle Switch**
+
+**Objective**: You are provided with a visually styled switch that is currently inaccessible. Your task is to make it usable with assistive technologies.
+
+- Add Name, Role, and Value to the switch in the form
+- Make it keyboard accessible
